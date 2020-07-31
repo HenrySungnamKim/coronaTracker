@@ -5,8 +5,10 @@
   "license": "MIT",
   "dependencies": {
     "date-fns": "^2.15.0",
+    "dot-env": "^0.0.1",
     "next": "^9.5.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "swr": "^0.3.0"
   }
 }
