@@ -28,6 +28,7 @@ const index = () => {
     "https://covid-193.p.rapidapi.com/history?country=S-Korea&day=" + yesterday;
   const { data, error } = useSWR(url, fetcher);
   if (error) return "에러발생";
+  console.log(error);
   if (!data) return "로딩중..";
   return (
     <Wrapper>
@@ -36,7 +37,6 @@ const index = () => {
         <p>
           {dateFns.format(today, "yyyy년 MM월 dd일")} {data.results}건의
           데이터가 있습니다.
-          {key != undefined ? "키있음" : "키없음"}
         </p>
 
         {data.response.map((item, index) => (
