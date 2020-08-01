@@ -1,5 +1,5 @@
 module.exports = {
   env: {
-    rapidApiKey: process.env.rapidApiKey,
+    RAPID_API_KEY: process.env.RAPID_API_KEY,
   },
 };

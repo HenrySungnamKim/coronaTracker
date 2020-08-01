@@ -6,7 +6,7 @@ import Image from "src/component/Main/Image";
 import Item from "src/component/Main/Item";
 
 const host = "covid-193.p.rapidapi.com";
-const key = process.env.rapidApiKey;
+const key = process.env.RAPID_API_KEY;
 
 const fetcher = (url) =>
   fetch(url, {
