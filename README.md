@@ -1,5 +1,9 @@
 # coronaTracker
 
-업데이트체크3
+## 코로나 바이러스 현황을 알려주는 React 따라하기 프로젝트
 
-## 코로나 바이러스 현황
+### 오늘 날짜 현황을 보여줍니다
+
+프로젝트 API : [https://rapidapi.com/api-sports/api/covid-193](https://rapidapi.com/api-sports/api/covid-193)
+
+프로젝트 라이브 링크 : [https://corona-tracker-one.vercel.app/](https://corona-tracker-one.vercel.app/)
