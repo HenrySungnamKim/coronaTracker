@@ -19,13 +19,9 @@ const fetcher = (url) =>
   }).then((res) => res.json());
 const index = () => {
   let today = new Date();
-  let yesterday = dateFns.format(
-    today.setDate(today.getDate() - 1),
-    "yyyy-MM-dd"
-  );
   //데이터 건수
   let url =
-    "https://covid-193.p.rapidapi.com/history?country=S-Korea&day=" + yesterday;
+    "https://covid-193.p.rapidapi.com/history?country=S-Korea&day=" + today;
   const { data, error } = useSWR(url, fetcher);
   if (error) return "에러발생";
   console.log(error);
